@@ -1,31 +1,40 @@
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../assets/logo.png';  // adjust path if needed
+import logo from '../assets/logo.png';  // Adjust path if needed
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 function Navbar({ isAdmin, setIsAdmin }) {
+  const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleLogout = () => {
     setIsAdmin(false);
+    setMenuOpen(false);
     navigate('/');
   };
 
   return (
     <header className="navbar">
       <div className="navbar-left">
-        <img src={logo} alt="Web Design Training Logo" className="logo-image" />
+        <img src={logo} alt="Logo" className="logo-image" />
         <h2 className="logo-text">Web Design Training</h2>
       </div>
-      <nav className="navbar-right">
-        <Link to="/" className="nav-link">Home</Link>
-        <Link to="/register" className="nav-link">Register</Link>
+
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+      </div>
+
+      <nav className={`navbar-right ${menuOpen ? 'active' : ''}`}>
+        <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/register" className="nav-link" onClick={() => setMenuOpen(false)}>Register</Link>
         {isAdmin ? (
           <>
-            <Link to="/admin" className="nav-link">Dashboard</Link>
+            <Link to="/admin" className="nav-link" onClick={() => setMenuOpen(false)}>Dashboard</Link>
             <button className="nav-button" onClick={handleLogout}>Logout</button>
           </>
         ) : (
-          <Link to="/admin-login" className="nav-link">Admin Login</Link>
+          <Link to="/admin-login" className="nav-link" onClick={() => setMenuOpen(false)}>Admin Login</Link>
         )}
       </nav>
     </header>
