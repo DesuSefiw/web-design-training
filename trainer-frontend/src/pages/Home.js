@@ -26,7 +26,7 @@ function Home() {
           <div className="benefit-card">
             <span>👨‍💻</span>
             <h3>For Beginners</h3>
-            <p>Designed for absolute beginners. No prior experience needed!</p>
+            <p>Designed for absolute beginners!</p>
           </div>
           <div className="benefit-card">
             <span>🏗️</span>
@@ -36,7 +36,7 @@ function Home() {
           <div className="benefit-card">
             <span>⚛️</span>
             <h3>Modern Tools</h3>
-            <p>Master React, Angular, Tailwind CSS, and other latest tech.</p>
+            <p>Master React, Angular,  CSS, and other latest tech HTML ,JS,CSS.</p>
           </div>
           <div className="benefit-card">
             <span>🌙</span>
