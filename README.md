@@ -1,3 +1,3 @@
-![image](https://github.com/user-attachments/assets/32f6de8b-6029-4bae-8bde-84c2cf126bcd)![image](https://github.com/user-attachments/assets/2ee8745d-efa9-450e-b111-284ed31f8b97)![Screenshot 2025-06-18 120218](https://github.com/user-attachments/assets/70e22675-3b60-464e-bba5-e9c4dbae6163)
+![Screenshot 2025-06-18 120218](https://github.com/user-attachments/assets/70e22675-3b60-464e-bba5-e9c4dbae6163)
 
 # web-design-training
