@@ -1,0 +1,92 @@
+.admin-dashboard-container {
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1e1f26, #2c2f3a);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00e6e6;
+}
+
+.stats-card {
+  background-color: #2e3240;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 230, 230, 0.2);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.stats-card h3 {
+  margin-bottom: 10px;
+  color: #a0fefe;
+}
+
+.stats-card .count {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00e6e6;
+}
+
+.trainer-list {
+  background-color: #2e3240;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 230, 230, 0.15);
+}
+
+.trainer-list h3 {
+  margin-bottom: 15px;
+  color: #a0fefe;
+}
+
+.trainer-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+  padding: 8px 0;
+}
+
+.trainer-name {
+  display: block;
+  font-weight: bold;
+  color: #00e6e6;
+}
+
+.trainer-detail {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.actions {
+  margin-top: 5px;
+}
+
+.actions button {
+  margin-right: 8px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00e6e6;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.actions button:hover {
+  background-color: #00c2c2;
+}
+
+.edit-form input,
+.edit-form select,
+.edit-form textarea {
+  display: block;
+  margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}

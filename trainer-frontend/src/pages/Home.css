@@ -1,0 +1,171 @@
+.home-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: linear-gradient(145deg, #1d1f27, #2c2f3a);
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00e6e6;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 0 0 10px #00e6e6aa;
+}
+
+.hero .subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.register-button {
+  padding: 14px 30px;
+  background-color: #00e6e6;
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px #00e6e6aa;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px #00e6e6ff;
+  color: #000;
+}
+
+/* Schedule Section */
+.schedule {
+  text-align: center;
+}
+
+.schedule h2 {
+  color: #00e6e6;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 2rem;
+  text-shadow: 0 0 8px #00e6e6aa;
+}
+
+.schedule-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: #2e3240;
+  padding: 25px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 230, 230, 0.2);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Why Join Section */
+.why-join h2 {
+  text-align: center;
+  color: #00e6e6;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-shadow: 0 0 8px #00e6e6cc;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefit-card {
+  background-color: #2e3240;
+  padding: 30px 20px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 230, 230, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 230, 230, 0.4);
+}
+
+.benefit-card span {
+  font-size: 2.8rem;
+  display: block;
+  margin-bottom: 18px;
+  color: #00e6e6;
+  text-shadow: 0 0 8px #00e6e6bb;
+}
+
+.benefit-card h3 {
+  margin-bottom: 15px;
+  color: #00e6e6;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.benefit-card p {
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.footer {
+  background-color: #1a1c24;
+  padding: 20px 0;
+  margin-top: 60px;
+  color: #888;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: inset 0 1px 5px rgba(0, 230, 230, 0.15);
+  user-select: none;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.social-links a {
+  color: #00e6e6;
+  margin: 0 12px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #33ffff;
+  transform: scale(1.2);
+}
