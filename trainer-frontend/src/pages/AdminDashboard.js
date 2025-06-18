@@ -14,13 +14,13 @@ function AdminDashboard() {
   }, []);
 
   const fetchTrainers = async () => {
-    const res = await axios.get('http://localhost:5000/api/trainers');
+    const res = await axios.get('https://web-design-training.onrender.com/api/trainers');
     setTrainers(res.data);
   };
 
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this trainer?')) {
-      await axios.delete(`http://localhost:5000/api/trainers/${id}`);
+      await axios.delete(`https://web-design-training.onrender.com/api/trainers/${id}`);
       fetchTrainers();
     }
   };
@@ -31,7 +31,7 @@ function AdminDashboard() {
   };
 
   const handleUpdate = async () => {
-    await axios.put(`http://localhost:5000/api/trainers/${editingId}`, editData);
+    await axios.put(`https://web-design-training.onrender.com/api/trainers/${editingId}`, editData);
     setEditingId(null);
     fetchTrainers();
   };
