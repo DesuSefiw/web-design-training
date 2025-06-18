@@ -10,7 +10,16 @@ router.get('/', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch trainers' });
   }
 });
-
+router.post('/register', async (req, res) => {
+  try {
+    const trainer = new Trainer(req.body);
+    await trainer.save();
+    res.status(201).json(trainer);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Failed to register trainer' });
+  }
+});
 // DELETE trainer
 router.delete('/:id', async (req, res) => {
   try {
