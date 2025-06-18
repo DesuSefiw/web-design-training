@@ -14,7 +14,7 @@ function RegisterTrainer() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/trainers/register', formData);
+      await axios.post('https://web-design-training.onrender.com/api/trainers/register', formData);
       alert('Trainer registered successfully!');
       setFormData({ name: '', email: '', phone: '', platform: '', motivation: '' });
     } catch (error) {
