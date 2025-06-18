@@ -35,7 +35,7 @@ function RegisterTrainer() {
             <option value="Zoom">Zoom</option>
             <option value="Telegram">Telegram</option>
           </select>
-          <textarea name="motivation" placeholder="Why do you want to join?" value={formData.motivation} onChange={handleChange} required />
+          <textarea name="motivation" placeholder="Why do you Expect to join?" value={formData.motivation} onChange={handleChange} required />
           <button type="submit">🚀 Register Now</button>
         </form>
       </div>
