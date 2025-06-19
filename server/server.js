@@ -12,6 +12,8 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));app.use(express.json());
+const projectRoutes = require('./routes/projectRoutes');
+app.use('/api/projects', projectRoutes);
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
