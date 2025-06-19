@@ -17,36 +17,60 @@ function AdminDashboard() {
   }, []);
 
   const fetchTrainers = async () => {
-    const res = await axios.get('https://web-design-training.onrender.com/api/trainers');
-    setTrainers(res.data);
-  };
-
-  const handleDelete = async (id) => {
-    if (window.confirm('Are you sure you want to delete this trainer?')) {
-      await axios.delete(`https://web-design-training.onrender.com/api/trainers/${id}`);
-      fetchTrainers();
+    try {
+      const res = await axios.get('https://web-design-training.onrender.com/api/trainers');
+      setTrainers(res.data);
+    } catch (err) {
+      console.error('Failed to load trainers:', err);
     }
   };
- const fetchProjectRequests = async () => {
+
+  const fetchProjectRequests = async () => {
   try {
-    const res = await axios.get('http://localhost:5000/api/projects');
+    const res = await axios.get('https://web-design-training.onrender.com/api/projects');
     setProjectRequests(res.data);
   } catch (err) {
     console.error('Failed to load project requests:', err);
   }
 };
+const handleDeleteRequest = async (id) => {
+  if (window.confirm('Are you sure you want to delete this project request?')) {
+    try {
+      await axios.delete(`https://web-design-training.onrender.com/api/projects/${id}`);
+      fetchProjectRequests(); // Refresh after deletion
+    } catch (err) {
+      alert('Failed to delete project request!');
+    }
+  }
+};
+
+  const handleDelete = async (id) => {
+    if (window.confirm('Are you sure you want to delete this trainer?')) {
+      try {
+        await axios.delete(`https://web-design-training.onrender.com/api/trainers/${id}`);
+        fetchTrainers();
+      } catch (err) {
+        alert('Delete failed!');
+      }
+    }
+  };
+
   const handleEdit = (trainer) => {
     setEditingId(trainer._id);
     setEditData(trainer);
   };
 
   const handleUpdate = async () => {
-    await axios.put(`https://web-design-training.onrender.com/api/trainers/${editingId}`, editData);
-    setEditingId(null);
-    fetchTrainers();
+    try {
+      await axios.put(`https://web-design-training.onrender.com/api/trainers/${editingId}`, editData);
+      setEditingId(null);
+      fetchTrainers();
+    } catch (err) {
+      alert('Update failed!');
+    }
   };
 
- return (
+  return (
     <div className="admin-dashboard-container">
       <h2 className="dashboard-title">📊 Admin Dashboard</h2>
 
@@ -124,4 +148,3 @@ function AdminDashboard() {
 }
 
 export default AdminDashboard;
-
