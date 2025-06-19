@@ -10,8 +10,8 @@ function Footer() {
         <p>© {new Date().getFullYear()} Website Design Training. All rights reserved.</p>
 
         <div className="contact-info">
-          <p><FaPhone /> +251 912 345 678</p>
-          <p><FaEnvelope /> yourname@example.com</p>
+          <p><FaPhone /> +251 961787618</p>
+          <p><FaEnvelope /> desalegnsefiw2@gmail.com</p>
         </div>
 
         <div className="social-links">
