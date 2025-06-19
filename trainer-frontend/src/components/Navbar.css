@@ -38,16 +38,22 @@
 }
 
 .nav-link {
-  text-decoration: none;
+  background: linear-gradient(135deg, #00e6e6, #0077ff);
   color: #fff;
-    background-color: #00e6e6;
-
-  transition: color 0.3s;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 230, 230, 0.4);
 }
 
 .nav-link:hover {
-   background-color: #000;
-  color: #00e6e6;
+  background: linear-gradient(135deg, #0077ff, #00e6e6);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 230, 230, 0.6);
+  color: #000;
 }
 
 .nav-button {
