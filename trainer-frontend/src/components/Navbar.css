@@ -39,6 +39,7 @@
 
 .nav-link {
   background: linear-gradient(135deg, #00e6e6, #0077ff);
+  text-decoration: none;
   color: #fff;
   border: none;
   padding: 10px 20px;
