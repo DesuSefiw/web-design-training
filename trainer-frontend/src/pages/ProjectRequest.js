@@ -15,13 +15,14 @@ function ProjectRequest() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/projects/request', formData);
+      await axios.post('https://web-design-training.onrender.com/api/projects/request', formData);
       alert('Your request has been submitted!');
       setFormData({ name: '', email: '', company: '', projectType: '', details: '' });
     } catch (error) {
       console.error(error);
       alert('Failed to submit request.');
     }
+    
   };
 
   return (
