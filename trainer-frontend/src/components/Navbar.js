@@ -27,8 +27,9 @@ function Navbar({ isAdmin, setIsAdmin }) {
 
       <nav className={`navbar-right ${menuOpen ? 'active' : ''}`}>
         <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>
+                  <Link to="/register" className="nav-link" onClick={() => setMenuOpen(false)}>Register as Trainer</Link>
+
          <Link to="/project-request" className="nav-link">Request Project</Link>
-        <Link to="/register" className="nav-link" onClick={() => setMenuOpen(false)}>Register as trainer</Link>
         {isAdmin ? (
           <>
             <Link to="/admin" className="nav-link" onClick={() => setMenuOpen(false)}>Dashboard</Link>
