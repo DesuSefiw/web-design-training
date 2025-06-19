@@ -40,11 +40,13 @@
 .nav-link {
   text-decoration: none;
   color: #fff;
+    background-color: #00e6e6;
+
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-   background-color: #00e6e6;
+   background-color: #000;
   color: #00e6e6;
 }
 
