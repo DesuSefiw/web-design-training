@@ -12,7 +12,7 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));app.use(express.json());
-const projectRoutes = require('./routes/projectRoutes');
+const projectRoutes = require('./routes/ProjectRequest');
 app.use('/api/projects', projectRoutes);
 
 // MongoDB connection
