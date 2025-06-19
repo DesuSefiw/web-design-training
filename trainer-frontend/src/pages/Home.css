@@ -169,3 +169,39 @@
   color: #33ffff;
   transform: scale(1.2);
 }
+.project-offer {
+  margin: 60px auto;
+  background-color: #1f2235;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 230, 230, 0.15);
+}
+
+.project-offer h2 {
+  font-size: 2rem;
+  color: #00e6e6;
+  margin-bottom: 15px;
+}
+
+.project-offer p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.offer-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #00e6e6;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.offer-button:hover {
+  background-color: #00cccc;
+}
