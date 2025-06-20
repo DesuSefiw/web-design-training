@@ -9,7 +9,7 @@ function Home() {
         <h1>🌐 Website Design Training</h1>
         <p className="subtitle">Hands-on training to build responsive websites (HTML, JS, CSS) using modern tools like React, Angular, Tailwind & more.</p>
         <p><strong>3 days/week · 2-hour live sessions via Telegram or Google Meet</strong></p>
-        <Link to="/register" className="register-button">🚀 Register Now</Link>
+        <Link to="/register" className="register-button"> Register Now</Link>
       </section>
 
       <section className="schedule">
