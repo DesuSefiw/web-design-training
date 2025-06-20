@@ -19,4 +19,14 @@
 
 .social-links a:hover {
   transform: scale(1.2);
+}.footer-link {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.3s;
 }
+
+.footer-link:hover {
+  color: #00bcd4;
+}
+
+
